@@ -243,8 +243,8 @@ const blog: Blog = {
 
 const work: Work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
+  label: "作品",
+  title: `作品 – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
@@ -252,9 +252,9 @@ const work: Work = {
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  label: "摄影",
+  title: `摄影作品 – ${person.name}`,
+  description: ` ${person.name} 摄影作品`,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
