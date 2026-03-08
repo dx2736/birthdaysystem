@@ -1,78 +1,16 @@
 ---
-title: "Create,edit and delete projects"
-summary: "Create, edit and delete projects in the work section of your Magic Portfolio."
-publishedAt: "2025-04-19"
-tag: "Magic Portfolio"
+title: "石板上的序列：雨林深处被遗忘的文明符号"
+subtitle: "Encoded Stones: Forgotten Civilization Symbols in the Deep Jungle"
+summary: "在暴雨洗刷后的溶洞遗迹中，探险队发现了一组神秘的数字序列，这似乎是通往真相的逻辑密钥。"
+image: "/images/gallery/puzzle2.jpg"
+publishedAt: "2006-03-15"
+tag: "考古"
 ---
 
-## Manage projects
+## 正文
 
-You can create, edit and delete projects by adding, modifying or removing `*.mdx` files in the `src/app/work/projects` directory.
+考察日志，3月15日。雨势比前几天更猛烈了，雷声在山谷间不断回响。我们在寻找避雨处时，无意中进入了一个天然的山洞。令人惊叹的不是溶洞本身，而是岩壁上刻着的一些奇怪符号。这些符号不像是已知的文字，更像是一种数字与位置的对应。
 
-## Frontmatter
+随行的考古专家指出，这些符号由四组简单的数字序列组成。当地向导对此讳莫如深，只说这是“森林之心”的表达方式。这些刻痕在潮湿的空气中泛着幽光，雨水顺着岩壁淌过数字，仿佛某种古老的计时器在寂静中跳动。我们尝试用最基础的字母顺序去对应（A=1, B=2...），却发现这其实是一个关于温度——或者说情感热度的阶梯。
 
-The frontmatter is used to set the project's metadata: title, description, image, and tags. It's used in the project's page and in meta- and open graph tags.
-
-<CodeBlock
-    marginBottom="16"
-    codes={[
-      {
-        code:
-`---
-title: "Developing a design system for indie creators"
-publishedAt: "2025-03-17"
-summary: "Once UI is a design system that empowers indie creators, small teams, and startups to build web applications."
-images:
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/image-03.jpg"
-team:
-  - name: "Lorant One"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-link: "https://once-ui.com/"
----`,
-        language: "tsx",
-        label: "src/app/work/projects/project-1.mdx"
-      }
-    ]}
-/>
-
-## MDX syntax
-
-You can use MDX to write the content of your projects. It helps you write rich and dynamic content with minimal code. Some MDX elements will be automatically transformed to Once UI components to integrate better in the design and add additional functionality.
-
-## Custom components
-
-You can use custom components in MDX files, but you need to import them first in the `src/components/mdx.tsx` file.
-
-<CodeBlock
-    marginBottom="16"
-    highlight="11-12"
-    codes={[
-      {
-        code:
-`const components = {
-    p: createParagraph as any,
-    h1: createHeading(1) as any,
-    h2: createHeading(2) as any,
-    h3: createHeading(3) as any,
-    h4: createHeading(4) as any,
-    h5: createHeading(5) as any,
-    h6: createHeading(6) as any,
-    img: createImage as any,
-    a: CustomLink as any,
-    Table,
-    CodeBlock,
-};`,
-        language: "tsx",
-        label: "src/components/mdx.tsx"
-      }
-    ]}
-/>
-
-As you can see, the `Table` and `CodeBlock` components are already imported and available for use. You can add more by simply importing them to this file and passing them to the `components` object.
-
-## Hot reload
-
-Hot reload of MDX files is currently not supported, but we're working on it.
+在相机的黑白高反差镜头下，这些石刻显得厚重而神秘。那排清晰的数字序列：**12 - 15 - 22 - 05**，正静静地等待着被解读。它不仅是数学上的排列，更是这段探险旅程中关于“共鸣”的逻辑证明。这种发现让我们意识到，这片森林不仅有野性的生长，更蕴含着某种超越物种的、被刻意留下的情感表达。
