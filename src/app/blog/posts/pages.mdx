@@ -1,56 +1,19 @@
 ---
-title: "Enable or disable pages for your portfolio"
-summary: "Magic Portfolio's RouteGuard component takes care of conditionally rendering pages based on your settings."
-image: "/images/gallery/horizontal-2.jpg"
-publishedAt: "2025-04-22"
-tag: "Magic Portfolio"
+title: "编号003考察记录"
+subtitle: "Sentinels in the Mist: Expedition Record No. 003"
+summary: "在主控器彻底报废前，录音设备捕捉到了一段低频次声波。经过傅里叶变换后的频谱图显示，这段噪音中隐藏着非自然的人工刻痕。"
+image: "/images/gallery/puzzle3.png"
+publishedAt: "2026-03-18"
+tag: "频谱"
 ---
 
-## Enable or disable pages
+## 正文
 
-Magic Portfolio's `RouteGuard` component takes care of conditionally rendering pages based on the `routes` object in the `resources/config.js` file.
+考察日志，3月18日。黎明。
+我们在北纬15度的雨林深处记录到了最后一段音频信号。当时主控器已经因为潮湿开始剧烈跳火，但在彻底陷入静默之前，环境监测仪记录下了一串极不寻常的低频震动。
 
-<CodeBlock
-    marginBottom="16"
-    highlight="6"
-    codes={[
-  {
-    code:
-`const routes = {
-    '/':        true,
-    '/about':   true,
-    '/work':    true,
-    '/blog':    true,
-    '/gallery': false,
-};`,
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
+回到营地后，我们尝试对这段名为“干扰”的音频进行了声谱分析。在马格南纪实风格的记录照片中，你可以看到那张打印出来的、充满噪点的频谱图纸。
 
-The code above will ensure that the `/gallery` page is not accessible and is not displayed in the navigation.
+这不是某种随机的波动。物理学家注意到，在 20Hz 到 200Hz 的特定频段内，波峰的排列呈现出一种规律的断裂。如果你忽略那些杂乱的高频环境音，只观察那七组连续出现的、由波峰最高点连接而成的“包络线”，你会发现每一个波段的起伏形态，竟然在笛卡尔坐标系中精确地还原了字母的转折点。
 
-## Add new pages
-
-When creating a new page, it needs to be added to the `routes` object in the `resources/config.js` file.
-
-<CodeBlock
-    marginBottom="16"
-    highlight="6"
-    codes={[
-  {
-    code:
-`const routes = {
-    '/':        true,
-    '/about':   true,
-    '/work':    true,
-    '/blog':    true,
-    '/gallery': false,
-    '/music': true,
-};`,
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
-
-The code above will ensure that the `/music` page is accessible. Users will be able to navigate to it after adding it to the navigation menu in the `components/Header.tsx` file.
+只有将数字屏幕上的符号序列与石刻上的坐标矩阵进行交叉比对，真相就会在指尖浮现，那是这片森林的最终答案。
