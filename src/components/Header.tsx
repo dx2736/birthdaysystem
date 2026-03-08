@@ -166,25 +166,6 @@ export const Header = () => {
                   </Row>
                 </>
               )}
-              {routes["/birthday"] && (
-                <>
-                  <Row s={{ hide: true }}>
-                    <ToggleButton
-                      prefixIcon="grid"
-                      href="/birthday"
-                      label={birthday.label}
-                      selected={pathname.startsWith("/birthday")}
-                    />
-                  </Row>
-                  <Row hide s={{ hide: false }}>
-                    <ToggleButton
-                      prefixIcon="grid"
-                      href="/birthday"
-                      selected={pathname.startsWith("/birthday")}
-                    />
-                  </Row>
-                </>
-              )}
               {display.themeSwitcher && (
                 <>
                   <Line background="neutral-alpha-medium" vert maxHeight="24" />
