@@ -179,8 +179,8 @@ export const Header = () => {
                   <Row hide s={{ hide: false }}>
                     <ToggleButton
                       prefixIcon="grid"
-                      href="/work"
-                      selected={pathname.startsWith("/work")}
+                      href="/birthday"
+                      selected={pathname.startsWith("/birthday")}
                     />
                   </Row>
                 </>
